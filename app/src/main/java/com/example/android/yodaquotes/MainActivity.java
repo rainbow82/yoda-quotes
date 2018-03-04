@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 int color = colorWheel.getColor();
                 quoteTextView.setText(quote);
                 rootLayout.setBackgroundColor(color);
+                getQuoteButton.setTextColor(color);
             }
         };
         getQuoteButton.setOnClickListener(listener);

@@ -9,18 +9,16 @@
     android:id="@+id/rootLayout"
     >
 
-    <TextView
-        android:id="@+id/title"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_alignLeft="@+id/quote"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="55dp"
-        android:layout_marginLeft="@dimen/marginSides"
-        android:textSize="@dimen/textSize"
-        android:alpha=".7"
-        android:text="@string/title"/>
+        android:layout_alignStart="@+id/quote"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/yodahead" />
+
 
     <TextView
         android:id="@+id/quote"
@@ -42,5 +40,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="21dp"
+        android:textColor="#388E3C"
         android:text="@string/buttonText" />
 </RelativeLayout>

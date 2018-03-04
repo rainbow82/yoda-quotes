@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">Yoda Quotes</string>
-    <string name="title">Yoda Says:</string>
     <string name="buttonText">Another Quote You Get</string>
 </resources>
