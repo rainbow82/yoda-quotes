@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.yodaquotes.MainActivity"
     android:background="#388E3C"
+    android:id="@+id/rootLayout"
     >
 
     <TextView
