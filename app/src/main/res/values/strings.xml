@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Yoda Quotes</string>
     <string name="buttonText">Another Quote You Get</string>
+    <string name="toastMessage">Tap the button to get another quote</string>
 </resources>

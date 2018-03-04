@@ -3,10 +3,12 @@ package com.example.android.yodaquotes;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView quoteTextView;
     private Button getQuoteButton;
     private RelativeLayout rootLayout;
+    private CardView card;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         quoteTextView = findViewById(R.id.quote);
         getQuoteButton = findViewById(R.id.newQuoteButton);
         rootLayout = findViewById(R.id.rootLayout);
-
+        card = findViewById(R.id.cardView);
 
         /*
             when button is clicked, select a new randomly generated quote
@@ -41,11 +44,12 @@ public class MainActivity extends AppCompatActivity {
                 quoteTextView.setText(quote);
                 rootLayout.setBackgroundColor(color);
                 getQuoteButton.setTextColor(color);
+                card.setCardBackgroundColor(color);
             }
         };
         getQuoteButton.setOnClickListener(listener);
 
-
+        Toast.makeText(this, getString(R.string.toastMessage), Toast.LENGTH_SHORT).show();
     }
 
 }
